@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Consent</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+    .cookie-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 420px;
+      text-align: center;
+    }
+    .cookie-box h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .cookie-box p {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #555;
+      line-height: 1.5;
+    }
+    .cookie-box button {
+      margin: 8px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.3s;
+    }
+    #acceptCookies {
+      background: #28a745;
+      color: #fff;
+    }
+    #acceptCookies:hover {
+      background: #218838;
+    }
+    #declineCookies {
+      background: #dc3545;
+      color: #fff;
+    }
+    #declineCookies:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cookie-box">
+    <h2>🍪 Cookie Consent</h2>
+    <p>
+      We use cookies to improve your experience.  
+      Please review our <a href="policy.html" target="_blank">Privacy Policy</a>.
+    </p>
+    <button id="acceptCookies">Accept</button>
+    <button id="declineCookies">Decline</button>
+  </div>
+
+  <script>
+    // Attach listeners safely after DOM loads
+    document.addEventListener("DOMContentLoaded", function() {
+      const acceptBtn = document.getElementById("acceptCookies");
+      const declineBtn = document.getElementById("declineCookies");
+
+      acceptBtn.addEventListener("click", function() {
+        localStorage.setItem("cookieConsent", "accepted");
+        window.location.href = "index.html"; // go home
+      });
+
+      declineBtn.addEventListener("click", function() {
+        localStorage.setItem("cookieConsent", "declined");
+        window.location.href = "index.html"; // still go home
+      });
+    });
+  </script>
+
+</body>
+</html>

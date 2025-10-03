@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions - BIG DATA CONSULTANCY</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero Section */
+    .terms-hero {
+      background: linear-gradient(120deg, #007BFF, #00CFFF);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      font-family: 'Arial', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .terms-hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    .terms-hero p {
+      font-size: 1.2em;
+      animation: fadeInUp 1s ease forwards 0.5s;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+    /* Terms Container */
+    .terms {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+
+    .terms .term-card {
+      background-color: #f8f9fa;
+      border-left: 5px solid #007BFF;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInCard 0.8s ease forwards;
+    }
+
+    .terms .term-card:nth-child(1) { animation-delay: 0.2s; }
+    .terms .term-card:nth-child(2) { animation-delay: 0.4s; }
+    .terms .term-card:nth-child(3) { animation-delay: 0.6s; }
+    .terms .term-card:nth-child(4) { animation-delay: 0.8s; }
+    .terms .term-card:nth-child(5) { animation-delay: 1s; }
+    .terms .term-card:nth-child(6) { animation-delay: 1.2s; }
+
+    @keyframes fadeInCard {
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    .terms h2 {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .terms p {
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo">
+      <h1>BIG DATA CONSULTANCY</h1>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <!-- Dropdown Menu Toggle -->
+  <div class="dropdown">
+    <button class="dropbtn">☰ Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="mission.html">Mission</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="terms-hero">
+    <h1>Terms and Conditions</h1>
+    <p>Your use of our website and services indicates acceptance of these terms</p>
+  </section>
+
+  <!-- Terms Section -->
+  <section class="terms">
+    <div class="term-card">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By using our website, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.</p>
+    </div>
+    <div class="term-card">
+      <h2>2. Services Disclaimer</h2>
+      <p>All services provided by Big Data Consultancy Ltd. are for informational and professional guidance purposes only. We do not guarantee specific results from the use of our services.</p>
+    </div>
+    <div class="term-card">
+      <h2>3. Intellectual Property</h2>
+      <p>All content, images, logos, and materials on this website are owned by Big Data Consultancy Ltd. and may not be used, copied, or distributed without permission.</p>
+    </div>
+    <div class="term-card">
+      <h2>4. Limitation of Liability</h2>
+      <p>Big Data Consultancy Ltd. is not responsible for any damages, losses, or consequences arising from the use of our website or services.</p>
+    </div>
+    <div class="term-card">
+      <h2>5. Privacy & Data Usage</h2>
+      <p>We respect your privacy. Any data you provide will be used according to our Privacy Policy. Please review our Privacy Policy for details on data collection and use.</p>
+    </div>
+    <div class="term-card">
+      <h2>6. Governing Law</h2>
+      <p>These terms are governed by the laws of Ghana. Any disputes will be subject to the exclusive jurisdiction of the courts of Ghana.</p>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Big Data Consultancy Ltd. | Sunyani, Ghana</p>
+      <p>Email: <a href="mailto:bigdatafric@gmail.com">bigdatafric@gmail.com</a> | Phone: +233 50 558 6372</p>
+      <div class="social-links">
+        <a href="https://wa.me/233241234567" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn"></a>
+      </div>
+      <div class="policy-links">
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<!-- Terms Acceptance Modal -->
+<div id="terms-modal" class="terms-modal">
+  <div class="terms-modal-content">
+    <h2>Terms & Conditions</h2>
+    <p>By using this website, you must agree to our Terms & Conditions.</p>
+    <button id="accept-btn">Accept</button>
+    <button id="decline-btn">Decline</button>
+  </div>
+</div>
+<script>
+  const modal = document.getElementById('terms-modal');
+  const acceptBtn = document.getElementById('accept-btn');
+  const declineBtn = document.getElementById('decline-btn');
+
+  // Show modal on page load
+  window.onload = () => {
+    modal.style.display = 'flex';
+  }
+
+  // Accept Terms
+  acceptBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    localStorage.setItem('termsAccepted', 'true'); // remember acceptance
+  });
+
+  // Decline Terms
+  declineBtn.addEventListener('click', () => {
+    alert("You must accept the Terms & Conditions to use this website.");
+    window.location.href = "index.html"; // redirect to home or another page
+  });
+
+  // Auto-hide if already accepted
+  if(localStorage.getItem('termsAccepted') === 'true'){
+    modal.style.display = 'none';
+  }
+</script>
+
+  <!-- JS for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropbtn = document.querySelector(".dropbtn");
+    const dropdown = document.querySelector(".dropdown-content");
+
+    dropbtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("show");
+    });
+
+    // Close menu if clicked outside
+    window.addEventListener("click", () => {
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  });
+</script>
+</html>
