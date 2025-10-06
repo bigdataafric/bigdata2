@@ -3350,4 +3350,55 @@ nav#nav-menu ul li a:hover {
 .about-text p {
   margin-bottom: 15px;
 }
+/* About Section Styling */
+.about-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.about-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-text {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+}
+
 
