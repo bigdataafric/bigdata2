@@ -3340,3 +3340,14 @@ nav#nav-menu ul li a:hover {
 .dropdown-content.show {
   display: block;
 }
+.about-text {
+  text-align: center;
+  max-width: 800px;  /* keeps it neat */
+  margin: 0 auto;    /* centers the block itself */
+  line-height: 1.6;  /* improves readability */
+  font-size: 1.1rem; /* slightly larger text */
+}
+.about-text p {
+  margin-bottom: 15px;
+}
+
