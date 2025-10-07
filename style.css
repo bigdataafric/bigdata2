@@ -3461,6 +3461,81 @@ nav#nav-menu ul li a:hover {
     font-size: 0.95rem;
   }
 }
+/* About Section Styling */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;   /* Full screen height on desktop */
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  /* Center text vertically inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 500px; /* Desktop card height */
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-section .container {
+    padding: 25px 15px;
+    min-height: 400px; /* Smaller height for tablets */
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .about-section .container {
+    min-height: 350px; /* Even smaller height for phones */
+    padding: 20px 15px;
+  }
+
+  .about-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+}
+
 
 
 
