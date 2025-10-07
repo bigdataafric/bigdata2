@@ -3400,5 +3400,67 @@ nav#nav-menu ul li a:hover {
     font-size: 0.95rem;
   }
 }
+/* About Section Styling */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;   /* take full screen height */
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-section .container {
+    padding: 20px 15px;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+}
+
 
 
